@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/detailUsersFragment"
+        android:name="com.dicoding.picodiploma.githubusers.fragment.DetailUsersFragment"
+        android:label="fragment_detail_users"
+        tools:layout="@layout/fragment_detail_users">
+        <argument
+            android:name="user"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dicoding.picodiploma.githubusers.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailUsersFragment2"
+            app:destination="@id/detailUsersFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_userFavoriteFragment"
+            app:destination="@id/userFavoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFavoriteFragment"
+        android:name="com.dicoding.picodiploma.githubusers.fragment.UserFavoriteFragment"
+        android:label="user_favorite_fragment"
+        tools:layout="@layout/user_favorite_fragment" >
+        <action
+            android:id="@+id/action_userFavoriteFragment_to_detailUsersFragment"
+            app:destination="@id/detailUsersFragment" />
+    </fragment>
+</navigation>

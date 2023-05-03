@@ -1,0 +1,30 @@
+<resources>
+    <!-- Other string resources-->
+    <string name="app_name">GitHub User</string>
+    <string name="user_name">Username</string>
+    <string name="name_user">Nama User</string>
+    <string name="user_location">Lokasi User</string>
+    <string name="user_repository">000</string>
+    <string name="user_company">Company</string>
+    <string name="user_followers">0</string>
+    <string name="user_following">0</string>
+    <string name="followers_title">Followers</string>
+    <string name="following_title">Following</string>
+    <string name="photo_profile">Photo Profile</string>
+    <string name="user_repository_title">Repositories</string>
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Following</string>
+    <string name="share">Share</string>
+    <string name="search_hint">Search</string>
+    <string name="error_title">Error: there is a problem while fetching the API</string>
+    <string name="hello_text">Hello!</string>
+    <string name="fav_text">Add as Favorite</string>
+    <string name="icon_fav">icon_fav</string>
+    <string name="favorite_list_text">Favorite List</string>
+    <string name="fav_button_text">fav button</string>
+    <string name="empty_text">User cannot be found</string>
+    <string name="emptyFavText">You don\'t have any favorite</string>
+
+</resources>
+
+
